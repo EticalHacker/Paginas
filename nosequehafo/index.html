@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Musical Sorpresa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Carta animada -->
+        <div class="envelope" id="envelope">
+            <div class="envelope-back"></div>
+            <div class="envelope-front"></div>
+            <div class="envelope-flap" id="flap"></div>
+        </div>
+
+        <!-- Contenido que aparece después de abrir la carta -->
+        <div class="content" id="content">
+            <div class="letter">
+                <h1 class="surprise-message">Esta es una sorpresa musical para ti</h1>
+                
+                <!-- Pantalla de karaoke -->
+                <div class="karaoke-screen" id="karaokeScreen">
+                    <div class="song-info">
+                        <h2 class="song-title">My Kind of Woman</h2>
+                        <p class="artist-name">Mac DeMarco</p>
+                    </div>
+                    
+                    <div class="lyrics-display" id="lyricsDisplay">
+                        <div class="current-line" id="currentLine">
+                            Presiona play para comenzar...
+                        </div>
+                        <div class="next-line" id="nextLine"></div>
+                    </div>
+                    
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+
+                <!-- Botón de reproducción -->
+                <button class="play-button" id="playButton">
+                    <div class="play-icon">▶</div>
+                    <span>Reproducir Música</span>
+                </button>
+
+                <!-- Elemento de audio -->
+                <audio id="audioPlayer" preload="auto">
+                    <source src="audios/Mac DeMarco  My Kind Of Woman.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+        </div>
+
+        <!-- Partículas decorativas -->
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <!-- Efectos visuales adicionales -->
+        <div class="music-waves" id="musicWaves">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
